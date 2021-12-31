@@ -27,12 +27,12 @@
 
 using namespace std;
 
-ll power(ll b,ll p,ll md)
-{
-	ll ans=1;
-	for(ll i=0;i<p;i++) ans = (ans*b) % md;
-		return ans;
-}
+// ll power(ll b,ll p,ll md)
+// {
+// 	ll ans=1;
+// 	for(ll i=0;i<p;i++) ans = (ans*b) % md;
+// 		return ans;
+// }
 
 int main()
 {
@@ -46,6 +46,7 @@ int main()
     ll n;cin>>n;
     ll ans=1;
     ll c=1e9+7;
+    //property ( a * b) % c = ( ( a % c ) * ( b % c ) ) % c
     for(ll i=0;i<n;i++) ans = ans*2 % c;
     cout<<ans; 
 
